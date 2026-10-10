@@ -80,19 +80,11 @@ Style	Namen, Komplexität, PEP-8
 `requirements.txt`: streamlit≥1.40, requests, ruff, black, pyright, pytest.  
 System-PATH: `ruff`, `black`, `pyright`, `pytest`. Ollama lokal.
 ---
-6. Bekannte Grenzen
-Unified Diffs von lokalen Modellen oft fehlerhaft → Full-File ist der sichere Pfad.
-Gate-Pyright im Schnell-Modus max. 60s (Timeout → SKIP, nicht „0 Fehler“).
-Cross-File-Typbrüche: Gate per Datei; Gesamtbild in der End-Validierung.
-Ruff-Autofix-Verwurf bei Whitespace-Bloat verwirft die ganze Datei-Fix-Runde (nicht pro Finding).
-Graph: Kanten nur zu geladenen Projektdateien (eine Datei → 1 Knoten, 0 Kanten).
-History: begrenzte Snapshots im Session-State (keine vollen ZIP-Bytes mehr in jedem Snapshot).
----
-7. Start
+6. Start
 ```bat
 streamlit run app.py
 ```
-oder `start_Code-Agent.bat`. Ollama mit Modell (z. B. `deepseek-coder-v2:16B` / `llama3`) muss laufen.
+oder `start_Code-Agent.bat`. Ollama mit Modell (z. B. `deepseek-coder` / `llama3`) muss laufen.
 Empfohlene UI-Defaults für Stabilität
 Self-Healing-Repair: aus
 Test-Modus: Schneller Test (Alltag) / Gründlich vor Export

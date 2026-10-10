@@ -1,5 +1,5 @@
 [README.md](https://github.com/user-attachments/files/33290313/README.md)
-# Offline Code Auditor Pro
+# Offline AI Code Refactoring Audit Cockpit Pro
 
 **Lokales KI-Code-Audit- & Refactoring-Cockpit** für Python – Streamlit-UI, Ollama, Ruff, Pyright, Black und pytest.  
 Kein Cloud-Zwang für die Analyse: Code und Prompts bleiben auf dem Rechner (bzw. dem konfigurierten Ollama-Host).
